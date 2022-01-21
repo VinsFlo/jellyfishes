@@ -293,12 +293,12 @@ function initiateStars(canvas, starArray, plancArray) {
 		plancz.style.top = obj.y + "px";
 		plancz.style.zIndex = "10000";
 		plancz.className = "plancton"
-		/* if(k < 0) {
-		plancz.style.animation = "starShine";
-		plancz.style.animationIterationCount = "infinite"
-		plancz.style.animationTimingFunction = "linear";
-		plancz.style.animationDuration = Math.floor(Math.random() * 5 + 5) + "s";
-		} */
+		if (k < 0) {
+			plancz.style.animation = "starShine";
+			plancz.style.animationIterationCount = "infinite"
+			plancz.style.animationTimingFunction = "linear";
+			plancz.style.animationDuration = Math.floor(Math.random() * 5 + 5) + "s";
+		}
 		document.getElementById("opacityOverlay").append(plancz)
 	}
 }
